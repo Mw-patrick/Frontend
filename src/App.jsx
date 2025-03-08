@@ -6,6 +6,8 @@ import Myaccount from "./pages/Myaccount";
 import {RouterProvider, createBrowserRouter, Outlet} from "react-router-dom";
 import Announcement from "./components/Announcement";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 function App() {
   const Layout = () =>{  
