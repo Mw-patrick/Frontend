@@ -10,7 +10,7 @@ function Product() {
           src="/lotion2.jpg"
           alt=""
           className="img-fluid rounded shadow-sm"
-          style={{ width: "600px",height: "350px", objectFit: "cover" }}
+          style={{ width: "1200px",height: "350px", objectFit: "cover" }}
         />
       </div>
 
