@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ProductList from "./pages/ProductList";
+import Order from "./pages/Order";
 
 
 function App() {
@@ -53,6 +55,14 @@ function App() {
           path:"/product/:productId",
           element:<Product />
         },
+        {
+          path:"/products/:searchterm",
+          element:<ProductList />
+        },  
+        {  
+        path:"/myorders",
+        element:<Order />
+      },    
       ]
     },
     
