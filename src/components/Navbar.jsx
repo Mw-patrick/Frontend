@@ -1,14 +1,15 @@
 import React from "react";
 import { FaSearch, FaUser, FaShoppingBasket } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div className="d-flex align-items-center justify-content-between shadow px-3" style={{ height: "60px" }}>
-      
+    <div className="d-flex align-items-center justify-content-between shadow px-3" style={{ height: "60px" }}>  
       {/* Logo Section */}
+      <Link to="/">
       <div className="cursor-pointer m-2 d-flex">
         <img src="/blisslogo1.png" style={{ height: "50px", width: "80px" }} alt="Bliss Logo" />
       </div>
+      </Link>
       
       {/* Search Bar */}
       <div className="d-flex align-items-center m-2">
@@ -42,6 +43,7 @@ const Navbar = () => {
       <div className="d-flex align-items-center gap-3">
         
         {/* Cart Icon */}
+        <Link to="/cart">
         <div className="position-relative">
           <FaShoppingBasket style={{ fontSize: "24px", color: "#e455c5", cursor: "pointer" }} />
           {/* Custom Badge */}
@@ -49,14 +51,17 @@ const Navbar = () => {
             className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
             style={{ fontSize: "12px", padding: "5px 8px" }}
           >
-            2
+            3
           </span>
         </div>
+        </Link>
         {/* Login Button */}
-        <div className="d-flex align-items-center border border-pink-300 px-3 py-2 rounded-lg hover:bg-pink-100 transition">
+         <Link to="/login" className="text-decoration-none">
+         <div className="d-flex align-items-center border border-pink-300 px-3 py-2 rounded-lg hover:bg-pink-100 transition">
           <FaUser style={{ color: "#e455c5", marginRight: "5px" }} />
           <span style={{ color: "#e455c5", fontWeight: "600" }}>Login</span>
         </div>
+         </Link>
       </div>
     </div>
   );
