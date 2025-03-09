@@ -1,6 +1,6 @@
 import StarRatings from "react-star-ratings";
 
-function Product() {
+function Product({img}) {
   return (
     <div 
       className="text-center m-3 p-3 rounded shadow-sm border"
@@ -8,7 +8,7 @@ function Product() {
     >
       {/* Product Image */}
       <img 
-        src="/serum1.jpg" 
+        src={img} 
         alt="Product" 
         className="img-fluid rounded mb-2"
         style={{ height: "400px", width: "100%", objectFit: "cover" }} 

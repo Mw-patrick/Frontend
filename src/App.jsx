@@ -3,6 +3,7 @@ import Cart from "./pages/Cart";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Myaccount from "./pages/Myaccount";
+import Product from "./pages/Product";
 import {RouterProvider, createBrowserRouter, Outlet} from "react-router-dom";
 import Announcement from "./components/Announcement";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -37,6 +38,10 @@ function App() {
         {
           path:"/myaccount",
           element:<Myaccount />
+        },
+        {
+          path:"/product/:productId",
+          element:<Product />
         },
       ]
     },
